@@ -29,22 +29,22 @@ public class STApplication extends Application {
     /**
      * 友盟App_Key
      */
-    public static final String YOUMENG_APPKEY = "545adc1afd98c56ebf004cdc";
+    public static final String YOUMENG_APPKEY = "";
 
     /**
      * Bmob Application ID
      */
-    public static final String BMOB_APPKEY = "c682d36b5358f46871eb8bf6d85c7b50";
+    public static final String BMOB_APPKEY = "";
 
     /**
      * 芒果移动广告 APP_KEY
      */
-    public static final String MOGO_APPKEY = "29131a73de9c40859363b53f41962cae";
+    public static final String MOGO_APPKEY = "";
 
     /**
      * 百度 APP_KEY
      */
-    public static final String BAIDU_APPKEY = "UE6gHRY2LL3pjXKe66YaIQqQ";
+    public static final String BAIDU_APPKEY = "";
 
     @Override
     public void onCreate() {
