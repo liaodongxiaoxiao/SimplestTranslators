@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+    <!-- android:text="love" -->
+    <TextView
+        android:id="@+id/q_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <!-- android:text="[英][love]" -->
+    <TextView
+        android:id="@+id/q_phen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/q_word"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <!-- android:text="[美][love]" -->
+    <TextView
+        android:id="@+id/q_pham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/q_phen"
+        android:paddingTop="7dp"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <!-- android:text="[ài]" -->
+    <TextView
+        android:id="@+id/q_phzh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/q_pham"
+        android:paddingTop="7dp"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <!-- android:text="[动]love; like; be fond of; affection; " -->
+
+    <TextView
+        android:id="@+id/q_means"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_word"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:lineSpacingExtra="2dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>

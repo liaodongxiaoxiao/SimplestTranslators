@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="menu_selected">#ffd6ffd0</color>
+    <color name="page_bg">#ffececec</color>
+
+    <color name="main_color">#00BA8C</color>
+    <color name="main_selected_color">#ff008761</color>
+    <color name="actionbar_text_color">#FFFFFF</color>
+
+
+    <!-- toolbar颜色 -->
+    <color name="toolbar_color">#ff008761</color>
+    <color name="toolbar_title_color">#FFFFFF</color>
+</resources>

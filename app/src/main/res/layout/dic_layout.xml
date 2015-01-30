@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/page_bg"
+    >
+
+    <ToggleButton
+        android:id="@+id/q_querytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/main_color"
+        android:background="@android:color/transparent"
+        android:checked="true"
+        android:text="英 → 汉"
+        android:textOff="英 ← 汉"
+        android:textOn="英 → 汉" />
+    <!--
+        android:completionHint            设置出现在下拉菜单中的提示标题  
+        android:completionThreshold       设置用户至少输入多少个字符才会显示提示  
+        android:dropDownHorizontalOffset  设置下拉菜单于文本框之间的水平偏移。下拉菜单默认与文本框左对齐  
+        android:dropDownVerticalOffset    设置下拉菜单于文本框之间的垂直偏移。下拉菜单默认紧跟文本框  
+        android:dropDownHeight               设置下拉菜单的高度  
+        android:dropDownWidth                设置下拉菜单的宽度  
+        android:ems = "10" 设置TextView或者Edittext的宽度为10个字符的宽度。当设置该属性后，控件显示的长度就为10个字符的长度，超出的部分将不显示。
+    -->
+
+    <AutoCompleteTextView
+        android:id="@+id/et_words"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/q_querytype"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/main_color"
+        android:completionThreshold="1"
+        android:dropDownHeight="wrap_content"
+        android:ems="10"
+        android:hint="输入查询的单词" />
+
+    <Button
+        android:id="@+id/q_querybtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/q_querytype"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/et_words"
+        android:text="@string/s_toquery" />
+
+    <com.ldxx.simplesttranslator.view.WordInfoTextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q_querybtn"
+        android:ems="10" />
+
+</RelativeLayout>

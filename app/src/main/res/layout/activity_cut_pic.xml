@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <include layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/tu_ku"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_bg"
+        android:layout_below="@+id/toolbar"
+        android:onClick="toChangeImg"
+        android:text="图库" />
+
+    <Button
+        android:id="@+id/pai_zhao"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/toolbar"
+        android:clickable="true"
+        android:background="@drawable/button_bg"
+        android:onClick="toCamera"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/button_bg"
+        android:onClick="toCut"
+        android:text="裁剪" />
+
+    <com.ldxx.view.ImageCut
+        android:id="@+id/cut_pic_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pai_zhao"
+        android:scaleType="fitCenter"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

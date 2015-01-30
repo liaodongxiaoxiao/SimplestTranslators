@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:id="@+id/et_words"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="请输入要翻译的内容"
+        android:singleLine="false" />
+
+    <ToggleButton
+        android:id="@+id/q_querytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/et_words"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:checked="true"
+        android:text="英译汉"
+        android:textOff="汉译英"
+        android:textOn="英译汉" />
+
+    <Button
+        android:id="@+id/q_querybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_words"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/q_querytype"
+        android:text="@string/s_translate" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q_querybtn"
+        android:ems="10" />
+
+</RelativeLayout>
